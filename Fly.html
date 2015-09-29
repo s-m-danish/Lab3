@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+img{
+    position: absolute;
+    left: 100px;
+    top: 230px;
+}
+
+#myDIV{
+    width:1500px ;
+    height:550px ;
+    
+    background-image: url('bg.jpg');
+    background-position: top left;
+    -webkit-animation: backgroundScroll 10s linear infinite;
+    animation: backgroundScroll 10s linear infinite;
+}
+
+@-webkit-keyframes backgroundScroll {
+from {background-position: 0 0;}
+to {background-position: -400px 0;}
+}
+ 
+@keyframes backgroundScroll {
+from {background-position: 0 0;}
+to {background-position: -400px 0;}
+}
+
+#myDIV1{
+    width:1500px ;
+    height:550px ;
+	z-index:auto;
+    
+    background-image: url('bg.jpg');
+    background-position: top left;
+    -webkit-animation-name: moveup;
+    animation-name: moveup;
+}
+
+@-webkit-keyframes moveup {
+from {background-position: 0 0;}
+to {background-position: 0 +200px;}
+}
+ 
+@-webkit-keyframes moveup {
+from {background-position: 0 0;}
+to {background-position: 0 +200px;}
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div id="myDIV"></div>
+<img src="gyro.jpg" alt="GyroCopter image" height="100" width="100">
+
+<div id="header" align="center">
+
+<button onclick="upFunction()">UP</button>
+<button>DOWN</button>
+</div>
+
+<script>
+function upFunction() {
+
+<div id="myDIV1"></div>
+    
+}
+</script>
+
+
+
+</body>
+
+</html>
